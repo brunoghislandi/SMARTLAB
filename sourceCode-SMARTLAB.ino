@@ -59,12 +59,13 @@
 #include <Fonts/FreeSerif9pt7b.h>
 
 /* Definições e Constantes */
-#define VOLT 39
-#define COLD 2
-#define LED_R 12
-#define LED_G 13
-#define BUZZ 14
-#define START 15
+#define VOLT 39   // Pino responsável pela leitura da bateria
+#define COLD 2    // Pino responsável por acionar ou não o rele que controla a refrigeração
+#define LED_R 12  // Pino responsável por controlar a cor Vermelha do LED RGB
+#define LED_G 13  // Pino responsável por controlar a cor Verde do LED RGB
+#define BUZZ 14   // Pino responsável por controlar o Buzzer
+#define START 15  // Pino responsável pelo botão de liga/desliga
+
 #define DHTPIN 16
 #define DHTTYPE DHT11
 #define SCREEN_WIDTH 128
@@ -172,7 +173,7 @@ void setup() {
   pinMode(START, INPUT_PULLUP);
 
   /* Definindo o estado inicial das constantes */
-  digitalWrite(COLD, HIGH);
+  digitalWrite(COLD, LOW);
   digitalWrite(LED_R, LOW);
   digitalWrite(LED_G, LOW);
   digitalWrite(BUZZ, LOW);
@@ -268,11 +269,11 @@ void vTaskActionRead(void *pvParameters) {
     }
     anterior = atual;
 
-    if (state == 1 && received >= 9 && start == 0) {
-      digitalWrite(COLD, HIGH);
+    if (state == 1 && received >= 8 && start == 0) {
+      digitalWrite(COLD, LOW);
     }
     else {
-      digitalWrite(COLD, LOW);
+      digitalWrite(COLD, HIGH);
     }
   }
 }

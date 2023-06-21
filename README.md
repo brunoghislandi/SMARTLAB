@@ -4,9 +4,16 @@
 
 #
 
-### **SMARTLAB: Armazenamento Inteligente de Produtos Termolábeis** - Faculdade UNISATC (SC) <p>
+### **Armazenamento Inteligente de Produtos Termolábeis** - Faculdade UNISATC<p>
 
 #### <u>Código fonte responsável por gerir todas as funcionalidades presentes no refrigerador inteligente desenvolvido pela SMARTLAB.</u>
+
+<p>
+
+<p align="center">
+  <img src="./images/smartlab-imagem.jpg" alt="logo SMARTLAB"/><br>
+  Imagem do Refrigerador
+</p>
 
 #
 
@@ -35,6 +42,7 @@
 
 <p align="center">
   <img src="./images/diagrama-esquematico.png" alt="Diagrama Esquemático do Refrigerador"/><br>
+  Conexões do Hardware
 </p>
 
 #
@@ -53,6 +61,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 
 <p align="center">
   <img src="./images/url-esp32.png" alt="local para inserir URL na IDE"/><br>
+  Local para inserir a URL na IDE
 </p>
 
 * Donwload e instalação do [driver de comunicação serial](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) da placa do ESP32 OLED
@@ -79,7 +88,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 * Por fim, a instalação das bibliotecas utilizadas no projeto, no qual podem sem encontradas em Ferramentas > Gerenciador de Bibliotecas.
 
 <p align="center">
-  <img src="./images/config3-ide.png" alt="Seleção da placa na IDE"/><br>
+  <img src="./images/config3-ide.png" alt="Instalação de Bibliotecas"/><br>
   Instalação de Bibliotecas
 </p>
 
@@ -87,6 +96,11 @@ https://dl.espressif.com/dl/package_esp32_index.json
 
 ## # Finalizando
 
-### Após todos esses passos, basta enviar o código contido nesse repositório para o ESP32 OLED com todos os seus respectivos componentes conectados e aproveitar o que existe de mais inteligente no segmento termolábil de armazenamento refrigerado.
+#### Após todos esses passos, basta enviar o código contido neste repositório para o ESP32 OLED já conectado com o hardware citado no começo dessa documentação e aproveitar o que existe de mais inteligente no segmento termolábil de armazenamento refrigerado.
+
+<p align="center">
+  <img src="./images/smartlab.gif" alt="GIF do Refrigerador"/><br>
+  GIF do Refrigerador
+</p>
 
 #
